@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+/* allgemein */
+body, html{
+height:100%;
+margin:0;
+font-size: 16px;
+font-family:"Lato";
+font-weight: 400;
+line-height: 1.8em;
+color:#F5F5F5;	
+background-color:#001926;
+}
+
+
+/* navigation*/
+.navbar{
+background-color:#001926!important;	
+	
+}
+
+.flexcontainer {
+
+  display: flex;
+  /*Erzwinge Einzeilige Positionierung von Kidselementen*/
+  flex-wrap: nowrap;
+}
+
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover, 
+.navbar-dark .navbar-nav .nav-item.active .nav-link{
+background:#0F3656;
+	
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link{
+padding:5px 25px;
+	
+}
+
+.nav-link{
+color:#fff!important;
+font-family: "Lato";
+font-weight: bold;
+}
+
+.navbar-dark .navbar-toggler {
+border: none;
+padding: 0%;
+
+}
+
+.logo{
+width: 18%;
+height: auto;
+	
+}
+
+
+/* Parallax */
+.pimg1{ 
+background-image: url("images/tokyostraße.png");
+min-height: 100%;
+position:relative;
+opacity: 1;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+
+.border{
+background-color:#001926;
+padding:20px;
+
+}
+
+.ptext{
+position: absolute;
+top:50%;
+width: 100%;
+text-align: center;
+color:#fff;
+font-size:35px;
+font-weight: bold;
+letter-spacing: 0.5em;
+   
+}
+
+
+
+/* section 1*/
+.section-1 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+.section-1 .team {
+  padding: 10vmin 4vmin;
+}
+
+.section-1 .card {
+  width: 22em;
+  margin-top: 10vmin;
+}
+
+.section-1 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-1 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-1 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+.card-body{
+color: #001926;		
+min-height: 350px;	
+}
+
+.event{
+padding-top: 5%;
+
+}
+
+.heading{
+padding-left: 4rem;
+}
+
+/* section 2*/
+.section-2 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: rgb(15,54,86);
+  background: linear-gradient(0deg, rgba(15,54,86,1) 26%, rgba(83,17,139,1) 100%);
+}
+
+.section-2 .col-md-12 > h1 {
+  padding: 2em 0 0.5em 0;
+  color: whitesmoke;
+  font-size: 6vmin;
+}
+
+.section-2 .col-md-12 > p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: var(--light-gray);
+  font-size: 3vmin;
+}
+
+.section-2 .download {
+  background: white;
+  display: inline-block;
+  border-radius: 3em;
+  padding: 4.5vmin 4.5vmin;
+  margin: 1em;
+}
+
+.section-2 .desktop h3 {
+  font-size: 4vmin;
+}
+
+.section-2 .desktop p {
+  font-size: 2vmin;
+}
+
+
+.downloadbuttonflexcntainer {
+  display: flex;
+  /*Kind Elemente Vertikal (Querachse) Zentrieren*/
+  align-items: center;
+  /*Kind Elemente Horizontal (Hauptachse) Zentrieren*/
+  justify-content: center;
+}
+
+.btn-download {
+  color: #fff;
+  background-color: #001926;
+  border-color: #001926;
+}
+
+.btn-download:hover{
+  color:#0F3656;
+}
+
+/* section 3*/
+.section-3 {
+  padding: 20vmin 0vmin;
+}
+
+.section-3 .row .col-md-6 .culture img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-3 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-3 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+  z-index: 1;
+}
+
+.section-3 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+  color: #001926;
+}
+
+.section-3 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: #0F3656;
+}
+
+
+/*footer*/
+footer {
+  background: rgb(15,54,86);
+  background: linear-gradient(0deg, rgba(15,54,86,1) 26%, rgba(83,17,139,1) 100%);
+  overflow-x: hidden;
+  padding: 7% 8%;
+}
+
+.footer:hover{
+background-color: grey !important;
+
+}
+
+
+/* Kontakt*/
+hr{
+  background:rgb(177, 177, 177);	
+  opacity: 1;
+  width: 25%;
+}
+
+.contact-form{
+background:#0F3656;
+color:white;
+margin-top: 100px;
+margin-bottom: 100px;
+padding: 20px;
+box-shadow: 0px 0px 10px 3px rgb(25, 25, 56);
+opacity:1;
+}
+
+.button-contact{
+background-color:#001926 !important;
+border: none;
+
+}
+/* section-Impressum*/
+.section-impressum {
+  padding: 20vmin 0vmin;
+  padding-bottom: 40%;
+}
+
+.section-impressum .row .col-md-6 .culture img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-impressum .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-impressum .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+  z-index: 1;
+}
+
+.section-impressum .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+  color: #001926;
+}
+
+.section-impressum .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: #0F3656;
+}
+
+.event{
+padding-left: 10%;
+padding-right: 10%;
+padding-bottom: 5%;
+
+
+}
+
+.heading{
+
+padding-bottom: 0.1%;
+
+}
+
+.fab {
+  cursor: pointer;
+}
+
+
+/* responsive mobile*/
+@media only screen and (max-width: 768px) {
+  header  {
+    padding-left: 1rem;
+  }
+  .section-3 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .section-impressum .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+ 
+  .section-2 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+  .section-2 .row h1 {
+    padding: 6vmin 4vmin;
+  }
+  .section-2 .platform .col-md-6 {
+    text-align: center !important;
+  }
+  .section-2 .desktop i {
+    font-size: 8vmin;
+  }
+  .section-1 .carousel-item {
+    padding-left: 0.6rem;
+  }
+  footer .row .col-md-2 {
+    margin-top: 8vmin;
+  }
+}
+
+/* screen size 375px */
+
+@media only screen and (max-width: 375px) {
+  .section-1 .card {
+    width: 18em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section-1 .carousel-inner {
+    margin-left: -4vmin;
+  }
+}
+
+
